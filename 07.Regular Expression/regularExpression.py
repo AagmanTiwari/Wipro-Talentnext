@@ -111,31 +111,23 @@ texts = [tag.get_text() for tag in soup.find_all()]
 # Print the extracted text
 print(texts)
 
-# 06. Given below list of words, identify the words that begin and end with the same
-# character.
-# civic
-# trust
-# widows
-# maximum
-# museums
-# aa
-# as
 
-# List of input words
+# 07. Given below list of words, identify the words that begin and end with the same character.
+# civic trust widows maximum museums
+# aa as
+
+# List of words to check
 words = ['civic', 'trust', 'widows', 'maximum', 'museums', 'aa', 'as']
 
-# Initialize an empty list to store matching words
+# Create an empty list to store matching words
 matching_words = []
 
-# Loop through each word in the list
+# Go through each word in the list
 for word in words:
     # Check if the first and last character of the word are the same
     if word[0] == word[-1]:
         matching_words.append(word)
 
-# Print the matching words
-print("Words that begin and end with the same character:", matching_words)
-
-
-
-
+# Print the result
+print("Words that begin and end with the same character:")
+print(matching_words)
